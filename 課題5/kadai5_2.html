@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>課題5-2</title>
+	<link rel="stylesheet" type="text/css" href="kadai5_2.css">
+	<meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+	function moveValue(id1, id2){
+		document.getElementById(id2).value=document.getElementById(id1).value
+	}
+</script>
+<div class="contents">
+	<form id="textboxs">
+		<label><input type="text" id="a">id=a</label>
+		<label><input type="text" id="b">id=b</label>
+		<label><input type="text" id="c">id=c</label>
+	</form>
+	<div class="button" onclick='moveValue("a", "b")'>aの値をbに移す</div>
+	<div class="button" onclick='moveValue("b", "c")'>bの値をcに移す</div>
+	<div class="button" onclick='moveValue("c", "a")'>cの値をaに移す</div>
+</div>
+<script type="text/javascript">
+	document.write("javascriptです");
+</script>
+</body>
+</html>

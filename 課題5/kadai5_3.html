@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>課題5-3</title>
+	<link rel="stylesheet" type="text/css" href="kadai5_3.css">
+	<meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+	function changeColor(c){
+		document.getElementById("area").style.color = c;
+	}
+	function addStatement(){
+		var tmp = document.getElementById("area");
+		tmp.innerHTML = tmp.innerHTML + "追加された文章です<br>";
+	}
+</script>
+<div class="contents">
+	<div class="area" id="area">
+	ここで追加・変更が行われます<br>
+	</div>
+	<div class="button" onclick='changeColor("red")'>赤色にする</div>
+	<div class="button" onclick='changeColor("blue")'>青色にする</div>
+	<div class="button" onclick='changeColor("green")'>緑色にする</div>
+	<div class="button" onclick='addStatement()'>文章を追加する</div>
+</div>
+<script type="text/javascript">
+	document.write("javascriptです");
+</script>
+</body>
+</html>

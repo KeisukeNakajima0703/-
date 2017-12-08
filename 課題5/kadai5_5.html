@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>課題5-5</title>
+	<link rel="stylesheet" type="text/css" href="kadai5_5.css">
+	<script type="text/javascript" src="kadai5_5.js"></script>
+	<meta charset="utf-8">
+</head>
+<body>
+<div class="contents">
+	<div class="calcArea">
+		<p>電卓プログラム</p>
+		<input type="text" id="formula" size="50">
+	</div>
+	<div class="buttons">
+		<div class="row">
+			<div class="button" id = "seven" onclick='addToFormula("formula", "seven")'>7</div>
+			<div class="button" id = "eight" onclick='addToFormula("formula", "eight")'>8</div>
+			<div class="button" id = "nine" onclick='addToFormula("formula", "nine")'>9</div>
+			<div class="button" id = "left" onclick='addToFormula("formula", "left")'>(</div>
+			<div class="button" id = "right" onclick='addToFormula("formula", "right")'>)</div>
+		</div>
+		<div class="row">
+			<div class="button" id = "four" onclick='addToFormula("formula", "four")'>4</div>
+			<div class="button" id = "five" onclick='addToFormula("formula", "five")'>5</div>
+			<div class="button" id = "six" onclick='addToFormula("formula", "six")'>6</div>
+			<div class="button" id = "mul" onclick='addToFormula("formula", "mul")'>*</div>
+			<div class="button" id = "div" onclick='addToFormula("formula", "div")'>/</div>
+		</div>
+		<div class="row">
+			<div class="button" id = "one" onclick='addToFormula("formula", "one")'>1</div>
+			<div class="button" id = "two" onclick='addToFormula("formula", "two")'>2</div>
+			<div class="button" id = "three" onclick='addToFormula("formula", "three")'>3</div>
+			<div class="button" id = "add" onclick='addToFormula("formula", "add")'>+</div>
+			<div class="button" id = "sub" onclick='addToFormula("formula", "sub")'>-</div>
+		</div>
+		<div class="row">
+			<div class="button" id = "zero" onclick='addToFormula("formula", "zero")'>0</div>
+			<div class="button" id = "period" onclick='addToFormula("formula", "period")'>.</div>
+			<div class="button" id = "calc" onclick='calculation("formula")'>=</div>
+			<div class="button" id = "reset" onclick='reset("formula")'>reset</div>
+		</div>
+	</div>
+</div>
+<div class="contents">
+	<div class="calcArea">
+		<p>ダイアルパッド</p>
+		<input type="text" id="number" size="50">
+	</div>
+	<div class="buttons">
+		<div class="row">
+			<div class="button" id = "one" onclick='addToFormula("number", "one")'>1</div>	
+			<div class="button" id = "two" onclick='addToFormula("number", "two")'>2</div>
+			<div class="button" id = "three" onclick='addToFormula("number", "three")'>3</div>
+		</div>
+		<div class="row">
+			<div class="button" id = "four" onclick='addToFormula("number", "four")'>4</div>
+			<div class="button" id = "five" onclick='addToFormula("number", "five")'>5</div>
+			<div class="button" id = "six" onclick='addToFormula("number", "six")'>6</div>
+		</div>
+		<div class="row">
+			<div class="button" id = "seven" onclick='addToFormula("number", "seven")'>7</div>
+			<div class="button" id = "eight" onclick='addToFormula("number", "eight")'>8</div>
+			<div class="button" id = "nine" onclick='addToFormula("number", "nine")'>9</div>
+		</div>
+		<div class="row">
+			<div class="button" id = "ast" onclick='addToFormula("number", "ast")'>*</div>
+			<div class="button" id = "zero" onclick='addToFormula("number", "zero")'>0</div>
+			<div class="button" id = "sharp" onclick='addToFormula("number", "sharp")'>#</div>
+		</div>
+		<div class="row">
+			<div class="button" id = "call" onclick='call("number")'>call</div>
+			<div class="button" id = "reset" onclick='reset("number")'>reset</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

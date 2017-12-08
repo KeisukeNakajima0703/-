@@ -1,0 +1,47 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+}
+.contents{
+	width: 400px;
+	height: 500px;
+	border: solid 3px black;
+	float:left;
+	margin-left: 30px;
+}
+.calcArea{
+	border: solid 2px gray;
+	width: 100%;
+	height: 20%;
+	margin: 0 auto;
+}
+.formula{
+	width: 100px;
+	height: 100px;
+	
+}
+.buttons{
+	border: solid 2px gray;
+	width: 100%;
+	height: 80%;
+}
+.button{
+	width: 50px;
+	height: 50px;
+	background-color: black;
+	color: white;
+	box-shadow: 0px 6px gray;
+	margin: 10px;
+	text-align: center;
+	float:left;
+}
+.button:active{
+	position: relative;
+	box-shadow: none;
+	top: 7px;
+}
+.row{
+	clear:both;
+}
