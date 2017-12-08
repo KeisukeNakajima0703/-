@@ -1,0 +1,67 @@
+body{
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+header{
+	background-color: aqua;
+	color: white;
+	padding: 10px;
+	height: 100px;
+}
+.header-logo{
+	font-size: 40px;
+	float: left;
+}
+.header-list{
+	float: left;
+}
+.main{
+	background-color: cyan;
+	color: white;
+	padding: 10px;
+}
+.comment_rupper{
+		border: solid 3px red;
+	}
+footer{
+	background-color: blue;
+	color: white;
+	padding: 10px;
+}
+h1 h2{
+	color: red;
+}
+.form{
+	border: outset 5px violet;
+	width: 500px;
+	height: 180px;
+}
+@media(max-width: 670px){
+	header{
+		width: 100%;
+		margin: 0px;
+	}
+	.form{
+		width: 100%;
+		margin: 0px;
+	}
+	.comment_rupper{
+		width: 100%;
+		margin: 0px;
+	}
+	.comment_info{
+		width: 100%;
+	}
+	.comment{
+		width: 100%;
+	}
+	.media{
+		width: 100%;
+	}
+	footer{
+		width: 100%;
+		margin: 0px;
+	}
+}
